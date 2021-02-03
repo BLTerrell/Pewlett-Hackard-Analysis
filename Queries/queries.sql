@@ -90,3 +90,15 @@ AND (de.to_date = '9999-01-01');
 
 
 
+-- Management List
+-- list of managers for each dep. include:
+-- dept_no,dept_name, emp_no,last_name,first_name,starting_date,ending_date
+SELECT dm.dept_no, d.dept_name, ce.last_name, ce.first_name, dm.from_date, dm.to_date
+INTO manager_info
+FROM dept_manager as dm
+INNER JOIN current_emp as ce
+ON (dm.emp_no = ce.emp_no)
+INNER JOIN departments as d
+ON (dm.dept_no = d.dept_no);
+
+
