@@ -122,3 +122,13 @@ FROM retirement_info as ri
 INNER JOIN dept_info as di
 ON (ri.emp_no  = di.emp_no)
 WHERE di.dept_name = 'Sales';
+
+
+
+--Use retirement_info table to generate a list of of members of the Sales and Development depts
+-- include their emp_no,first_name,last_name,dept_name
+SELECT ri.emp_no, ri.first_name, ri.last_name, di.dept_name
+FROM retirement_info as ri
+INNER JOIN dept_info as di
+ON (ri.emp_no  = di.emp_no)
+WHERE di.dept_name IN ('Sales','Development');
