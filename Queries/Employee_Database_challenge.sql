@@ -20,3 +20,13 @@ INTO unique_titles
 FROM retirement_titles AS rt
 ORDER BY rt.emp_no, rt.to_date 
 DESC;
+
+
+-- Query to count the number of employees who are about to retire (by job title)
+-- Retrieve # of titles from unique_titles, create retiring_titles to hold info into
+-- group by title, order by desc, export to  retiring_titles.csv
+SELECT COUNT(emp_no), title
+INTO retiring_titles
+FROM unique_titles
+GROUP BY title
+ORDER BY COUNT(emp_no) DESC;
