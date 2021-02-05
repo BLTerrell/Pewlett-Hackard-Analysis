@@ -18,8 +18,7 @@ rt.last_name,
 rt.title
 INTO unique_titles
 FROM retirement_titles AS rt
-ORDER BY rt.emp_no, rt.to_date 
-DESC;
+ORDER BY rt.emp_no, rt.to_date DESC;
 
 
 -- Query to count the number of employees who are about to retire (by job title)
@@ -30,3 +29,19 @@ INTO retiring_titles
 FROM unique_titles
 GROUP BY title
 ORDER BY COUNT(emp_no) DESC;
+
+
+-- query to create Mentorship Eligibility table
+-- Retrieve emp_no, first_name, last_name, and birth_date from employees table
+-- Retrieve from_date and to_date from dept_emp table, retrieve title from titles table
+SELECT DISTINCT ON (e.emp_no) e.emp_no, e.first_name, e.last_name, e.birth_date, 
+ 		de.from_date, de.to_date, t.title
+INTO mentorship_eligibility
+FROM employees AS e
+INNER JOIN dept_emp as de
+ON (e.emp_no = de.emp_no)
+INNER JOIN titles as t
+ON (e.emp_no = t.emp_no)
+WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+AND (de.to_date = '9999-01-01')
+ORDER BY emp_no;
