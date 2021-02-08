@@ -21,7 +21,7 @@ After converting our CSV files into a SQL database, our objective is to use the 
 
 ### Analysis
 
-###### Retiring Employees <img src='/Resources/unique_titles.png' width = 25% align="right" alt="Retiring Employees Grouped By Title" title="Retiring Employees Grouped By Title">
+###### Retiring Employees <img src='/Resources/unique_titles.png' width = 19% align="right" alt="Retiring Employees Grouped By Title" title="Retiring Employees Grouped By Title">
 
 
 - 90,398 people are retiring (37.6% of the company).
@@ -30,7 +30,7 @@ After converting our CSV files into a SQL database, our objective is to use the 
 <br/>
 <br/>
 
-###### Mentoring Eligibility <img src='/Resources/mentoring_eligibilty_groupby_titles.png' width = 25% align="right" alt="Mentor Eligble Employees Grouped By Title" title="Mentor Eligble Employees Grouped By Title">
+###### Mentoring Eligibility <img src='/Resources/mentoring_eligibilty_groupby_titles.png' width = 19% align="right" alt="Mentor Eligble Employees Grouped By Title" title="Mentor Eligble Employees Grouped By Title">
 
 - 1,549 people are eligible for the mentorship program.
 - 47% of employees eligible for mentorship are already Senior-level employees.
