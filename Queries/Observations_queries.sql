@@ -1,5 +1,13 @@
-
-
+-- Summary Question #1
+-- get the total number of non-retiring employees by title
+SELECT COUNT(e.emp_no) as remaining_employees, title
+FROM employees as e
+INNER JOIN titles as t 
+ON e.emp_no = t.emp_no
+WHERE t.to_date = ('9999-01-01')
+AND e.birth_date > ('1955-12-31')
+GROUP BY t.title
+ORDER BY t.title;
 
 
 
