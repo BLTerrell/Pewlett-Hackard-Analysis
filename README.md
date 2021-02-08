@@ -8,10 +8,16 @@ After converting our CSV files into a SQL database, our objective is to use the 
 
 ### Resources
 
-- Data Source: [departments.csv](Data/departments.csv), [dept_emp.csv](Data/dept_emp.csv), [dept_managers.csv](Data/dept_managers.csv), [employees.csv](Data/employees.csv), [salaries.csv](Data/salaries.csv), [titles.csv](Data/salaries.csv)
+- Data Source: [departments.csv](Data/departments.csv), [dept_emp.csv](Data/dept_emp.csv), [dept_manager.csv](Data/dept_manager.csv), [employees.csv](Data/employees.csv), [salaries.csv](Data/salaries.csv), [titles.csv](Data/salaries.csv)
 - Software: PGAdmin 4, PostgreSQL 13.0, Visual Studio Code 1.52.1
 
 ## Project Results
+
+### Data Generated
+- [retirement_titles.csv](Data/retirement_titles.csv)
+- [unique_titles.csv](Data/unique_titles.csv)
+- [retiring_titles.csv](Data/retiring_titles.csv)
+- [mentorship_eligibility.csv](Data/mentorship_eligibility.csv)
 
 ### Analysis
 
