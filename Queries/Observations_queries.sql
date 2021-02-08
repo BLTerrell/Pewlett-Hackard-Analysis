@@ -9,8 +9,11 @@ AND e.birth_date > ('1955-12-31')
 GROUP BY t.title
 ORDER BY t.title;
 
-
-
+-- Get total number of retiring employees by sorted by title
+SELECT COUNT(emp_no) AS retiring_employees, title
+FROM unique_titles
+GROUP BY title
+ORDER BY title;
 
 -- Summary Question #2
 -- Using unique_titles and dept_info GROUP BY department (only Senior level employees)

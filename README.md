@@ -39,10 +39,7 @@ After converting our CSV files into a SQL database, our objective is to use the 
 1. How many roles will need to be filled as the "silver tsunami" begins to make an impact?
     - The below tables represent the retiring employees (on the left) and the remaining employees (on the right). From these tables you can interpret that if Pewlett-Hackard is going to promote from within then they will only have: 2,498 Assistant Engineers to fill 14,222 open Engineering positions; 21,698 Engineers to fill 29,414 Senior Engineering positions; and 17,890 Staff employees to fill 28,254 Senior Staff positions. If they plan to maintain the same quantity of employees then they will need to hire from outside the company.
     <img src='/Resources/retiring_employees_by_title.png' width = 40% alt="Retiring Employees Grouped By Title" title="Retiring Employees Grouped By Title"> <img src='/Resources/remaining_employees_by_title.png' width = 42% alt="Remaining Employees Grouped By Title" title="Remaining Employees Grouped By Title">
-<br/>
+    <br/>
 2. Are there enough qualified, retirement ready employees in the departments to mentor the next generation of Pewlett Hackard?
-    - Need to compare retiring Senior Staff to Regular Staff and look at a mentor-mentee ratio By department! Is mentee singled to only one year (1965)?
-
-    <img src='/Resources/eligible_for_mentor.png' width = 44.8%  alt="Employees Eligible for Mentor By Department" title="Employees Eligible for Mentor By Department"> <img src='/Resources/retiring_senior_employees.png' width = 45% alt="Retiring Senior Employees By Department" title="Retiring Senior Employees By Department">
-
-   
+    - The below tables represent the Senior-level retiring employees (on the left) and the mentor-eligible employees (on the right). You can see that if every Senior-level retiree from each department decided to mentor an eligible employee then there would be at least 15 mentors for each mentee. There are more than enought qualified, retiremtn ready employees in each department to mentor the next generation. Even if only 7% of the Senior-level retirees decided to become mentors, I think the company should expand the pool of eligible mentees. 
+    <img src='/Resources/retiring_senior_employees.png' width = 45% alt="Retiring Senior Employees By Department" title="Retiring Senior Employees By Department"> <img src='/Resources/eligible_for_mentor.png' width = 44.8%  alt="Employees Eligible for Mentor By Department" title="Employees Eligible for Mentor By Department"> 
